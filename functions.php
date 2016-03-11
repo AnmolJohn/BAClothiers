@@ -6,7 +6,11 @@
  *
  * @package BA_Clotheirs
  */
-
+ 
+function ba_clothiers_google_fonts() {
+	wp_enqueue_style('ba-google-fonts', 'https://fonts.googleapis.com/css?family=Lobster|Libre+Baskerville', false );
+}
+add_action('wp_enqueue_scripts', 'ba_clothiers_google_fonts');
 if ( ! function_exists( 'ba_clotheirs_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.

@@ -1,7 +1,7 @@
 /*
 Theme Name: BA Clotheirs
 Theme URI: http://underscores.me/
-Author: Underscores.me
+Author: Anjanie Rupnarain, Anmol Joy John, Bizma Aslam
 Author URI: http://underscores.me/
 Description: Description
 Version: 1.0.0
@@ -70,7 +70,7 @@ nav,
 section,
 summary {
 	display: block;
-	color: pink;
+	color: #000000;
 }
 
 audio,
@@ -273,9 +273,8 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'Libre Baskerville', serif;
 	font-size: 16px;
-	font-size: 1rem;
 	line-height: 1.5;
 }
 
@@ -286,6 +285,7 @@ h4,
 h5,
 h6 {
 	clear: both;
+	font-family: 'Lobster', cursive;
 }
 
 p {
@@ -309,7 +309,7 @@ address {
 
 pre {
 	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-family: font-family: 'Libre Baskerville', serif;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	line-height: 1.6;
@@ -556,6 +556,8 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+
+
 .main-navigation {
 	clear: both;
 	display: block;
@@ -924,4 +926,16 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+
+#masthead{
+	border: 5px double #000000;
+	padding: 10px;
+	background-color: #d9d9d9;
+}
+
+.site-title{
+	text-align: center;
+	font-size: 80px;
 }
