@@ -535,13 +535,13 @@ a {
 }
 
 a:visited {
-	color: purple;
+	color: #990099;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #33bbff;
 }
 
 a:focus {
@@ -938,4 +938,5 @@ object {
 .site-title{
 	text-align: center;
 	font-size: 80px;
+	
 }
