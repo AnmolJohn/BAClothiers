@@ -570,14 +570,13 @@ a:active {
 .main-navigation ul {
 	display: none;
 	list-style: none;
-	margin: auto;
-	padding-left: auto;
+	margin: 0;
+	padding-left: 0;
 }
 
 .main-navigation li {
-	text-align: center;
+	float: left;
 	position: relative;
-	float: center;
 }
 
 .main-navigation a {
@@ -951,3 +950,10 @@ object {
 	padding: 10px;
 }
 
+.widget-area{
+	float: right;
+	border: double 5px #000000;
+	width: 250px;
+	margin: 2px;
+	padding: 7px;
+}
