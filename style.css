@@ -55,6 +55,8 @@ html {
 
 body {
 	margin: 100px;
+	
+
 }
 
 article,
@@ -531,17 +533,17 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #ff0055;
 }
 
 a:visited {
-	color: #990099;
+	color: #33bbff;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: #33bbff;
+	color: #990099;
 }
 
 a:focus {
@@ -568,13 +570,14 @@ a:active {
 .main-navigation ul {
 	display: none;
 	list-style: none;
-	margin: 0;
-	padding-left: 0;
+	margin: auto;
+	padding-left: auto;
 }
 
 .main-navigation li {
-	float: left;
+	text-align: center;
 	position: relative;
+	float: center;
 }
 
 .main-navigation a {
@@ -938,5 +941,13 @@ object {
 .site-title{
 	text-align: center;
 	font-size: 80px;
-	
+	padding: 15px;
 }
+
+.site-description{
+	text-align: center;
+	border: 5px #000000;
+	border-style: double hidden double hidden;
+	padding: 10px;
+}
+
