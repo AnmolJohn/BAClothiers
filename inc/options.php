@@ -93,7 +93,7 @@ function bac_settings_init() {
 	function bac_sitewidth_field_render() { 
 		$options = get_option( 'bac_options_settings' );
 		?>
-		<sitewidth cols="40" rows="5" name="bac_options_settings[bac_sitewidth_field]"><?php if (isset($options['bac_sitewidth_field'])) echo $options['bac_sitewidth_field']; ?></sitewidth>
+		<textarea cols="40" rows="5" name="bac_options_settings[bac_sitewidth_field]"><?php if (isset($options['bac_sitewidth_field'])) echo $options['bac_sitewidth_field']; ?></textarea>
 		<?php
 	}
 
