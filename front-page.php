@@ -13,18 +13,19 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			
-			<?php
-      $paged = ( get_query_var ('paged') ) ? get_query_var ('paged') : 1 ;
-      $bac = array('showposts' => 2 , 'cat' => '192' , 'paged' => $paged );
-                  $my_query = new WP_Query($bac);
+	<?php
+      $bacpage = ( get_query_var ( 'paged' ) ) ? get_query_var ( 'paged' ) : 1;
+      $bac = array('showposts'=>2, 'cat'=>'192','paged'=>$bacpage);
+                  $bac_query = new WP_Query($bac);
               ?>
 
                   
-            <?php if ($my_query->have_posts()) : while ($my_query->have_posts()) : $my_query->the_post(); ?>
-              <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <?php if ( ! has_post_thumbnail() ) : ?>
+            <?php if ($bac_query->have_posts()) : while ($bac_query->have_posts()) : $bac_query->the_post(); ?>
+              <article id="post-<?php the_ID();?>" <?php post_class(); ?>>
+
+                    <?php if ( has_post_thumbnail() ) : ?>
     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-        <?php the_post_thumbnail('medium'); ?>
+        <?php the_post_thumbnail('large'); ?>
     </a>
 <?php endif; ?>
 
