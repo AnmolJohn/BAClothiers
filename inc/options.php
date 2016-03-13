@@ -1,4 +1,8 @@
 <?php
+/**
+* BA Clotheirs Options Page
+*/
+
 	
 function cd_add_submenu() {
 		add_submenu_page( 'themes.php', 'My Super Awesome Options Page', 'Theme Options', 'manage_options', 'theme_options', 'my_theme_options_page');
