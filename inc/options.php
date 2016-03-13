@@ -23,13 +23,14 @@ function bac_settings_init() {
 	function bac_options_page_section_callback() { 
 		echo 'A description and detail about the section.';
 	}
+	
 
 	add_settings_field( 
-		'cd_text_field', 
+		'bac_text_field', 
 		'Enter your text', 
-		'cd_text_field_render', 
-		'theme_options', 
-		'cd_options_page_section' 
+		'bac_text_field_render', 
+		'BAC_theme_options', 
+		'bac_options_page_section' 
 	);
 
 	add_settings_field( 
@@ -64,10 +65,10 @@ function bac_settings_init() {
 		'cd_options_page_section'  
 	);
 
-	function cd_text_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+	function bac_text_field_render() { 
+		$options = get_option( 'bac_options_settings' );
 		?>
-		<input type="text" name="cd_options_settings[cd_text_field]" value="<?php if (isset($options['cd_text_field'])) echo $options['cd_text_field']; ?>" />
+		<input type="text" name="bac_options_settings[bac_text_field]" value="<?php if (isset($options['bac_text_field'])) echo $options['bac_text_field']; ?>" />
 		<?php
 	}
 	
