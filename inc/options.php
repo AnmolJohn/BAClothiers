@@ -4,23 +4,23 @@
 */
 
 	
-function cd_add_submenu() {
-		add_submenu_page( 'themes.php', 'My Super Awesome Options Page', 'Theme Options', 'manage_options', 'theme_options', 'my_theme_options_page');
+function bac_add_submenu() {
+		add_submenu_page( 'themes.php', 'BA Clotheirs Options Page', 'BAC Theme Options', 'manage_options', 'theme_options', 'bac_theme_options_page');
 	}
-add_action( 'admin_menu', 'cd_add_submenu' );
+add_action( 'admin_menu', 'bac_add_submenu' );
 	
 
-function cd_settings_init() { 
-	register_setting( 'theme_options', 'cd_options_settings' );
+function bac_settings_init() { 
+	register_setting( 'BAC_theme_options', 'bac_options_settings' );
 	
 	add_settings_section(
-		'cd_options_page_section', 
+		'bac_options_page_section', 
 		'Your section description', 
-		'cd_options_page_section_callback', 
-		'theme_options'
+		'bac_options_page_section_callback', 
+		'BAC_theme_options'
 	);
 	
-	function cd_options_page_section_callback() { 
+	function bac_options_page_section_callback() { 
 		echo 'A description and detail about the section.';
 	}
 
@@ -105,13 +105,13 @@ function cd_settings_init() {
 	<?php
 	}
 	
-	function my_theme_options_page(){ 
+	function bac_theme_options_page(){ 
 		?>
 		<form action="options.php" method="post">
-			<h2>My Awesome Options Page</h2>
+			<h2>BA Clotheirs Options Page</h2>
 			<?php
-			settings_fields( 'theme_options' );
-			do_settings_sections( 'theme_options' );
+			settings_fields( 'BAC_theme_options' );
+			do_settings_sections( 'BAC_theme_options' );
 			submit_button();
 			?>
 		</form>
@@ -120,4 +120,4 @@ function cd_settings_init() {
 
 }
 
-add_action( 'admin_init', 'cd_settings_init' );
+add_action( 'admin_init', 'bac_settings_init' );
