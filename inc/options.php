@@ -15,7 +15,7 @@ function bac_settings_init() {
 	
 	add_settings_section(
 		'bac_options_page_section', 
-		'Your section description', 
+		'This page will allow the users chnage few things directly from the BA Clotheirs options page', 
 		'bac_options_page_section_callback', 
 		'BAC_theme_options'
 	);
