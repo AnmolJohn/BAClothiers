@@ -64,8 +64,16 @@ function bac_settings_init() {
 		'theme_options', 
 		'cd_options_page_section'  
 	);
+	
+	add_settings_field( 
+		'bac_setting_color', 
+		'Choose from the dropdown', 
+		'bac_setting_color_render', 
+		'BAC_theme_options', 
+		'bac_options_page_section'  
+	);
 
-function my_setting_color() {
+function bac_setting_color() {
     $options = get_option( 'bac_options_settings' );
     ?>
     <input type="text" name="bac_options_settings[color]" value="<?php echo esc_attr( $options['color'] ); ?>" />
