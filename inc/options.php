@@ -35,7 +35,7 @@ function bac_settings_init() {
 
 	add_settings_field( 
 		'bac_background_field', 
-		'Pick Your Color', 
+		'Change Background Color', 
 		'bac_background_field_render', 
 		'BAC_theme_options', 
 		'bac_options_page_section'  
@@ -50,11 +50,11 @@ function bac_settings_init() {
 	);
 	
 	add_settings_field( 
-		'cd_textarea_field', 
+		'bac_sitewidth_field', 
 		'Enter content in the textarea', 
-		'cd_textarea_field_render', 
-		'theme_options', 
-		'cd_options_page_section'  
+		'bac_sitewidth_field_render', 
+		'BAC_theme_options', 
+		'bac_options_page_section'  
 	);
 	
 	add_settings_field( 
@@ -90,10 +90,10 @@ function bac_settings_init() {
 		<?php
 	}
 	
-	function cd_textarea_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+	function bac_sitewidth_field_render() { 
+		$options = get_option( 'bac_options_settings' );
 		?>
-		<textarea cols="40" rows="5" name="cd_options_settings[cd_textarea_field]"><?php if (isset($options['cd_textarea_field'])) echo $options['cd_textarea_field']; ?></textarea>
+		<sitewidth cols="40" rows="5" name="bac_options_settings[bac_sitewidth_field]"><?php if (isset($options['bac_sitewidth_field'])) echo $options['bac_sitewidth_field']; ?></sitewidth>
 		<?php
 	}
 
