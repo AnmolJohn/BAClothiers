@@ -34,11 +34,11 @@ function bac_settings_init() {
 	);
 
 	add_settings_field( 
-		'cd_checkbox_field', 
-		'Check your preference', 
-		'cd_checkbox_field_render', 
-		'theme_options', 
-		'cd_options_page_section'  
+		'bac_background_field', 
+		'Pick Your Color', 
+		'bac_background_field_render', 
+		'BAC_theme_options', 
+		'bac_options_page_section'  
 	);
 
 	add_settings_field( 
@@ -73,11 +73,11 @@ function bac_settings_init() {
 		<?php
 	}
 	
-	function cd_checkbox_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+	function bac_background_field_render() { 
+		$options = get_option( 'bac_options_settings' );
 	?>
-		<input type="checkbox" name="cd_options_settings[cd_checkbox_field]" <?php if (isset($options['cd_checkbox_field'])) checked( 'on', ($options['cd_checkbox_field']) ) ; ?> value="on" />
-		<label>Turn it On</label> 
+		<input type="background" name="bac_options_settings[bac_background_field]" <?php if (isset($options['bac_background_field'])) checked( 'on', ($options['bac_background_field']) ) ; ?> value="on" />
+		<label>Choose Color</label> 
 		<?php	
 	}
 	
