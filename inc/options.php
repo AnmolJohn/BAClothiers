@@ -15,7 +15,7 @@ function bac_settings_init() {
 	
 	add_settings_section(
 		'bac_options_page_section', 
-		'This page will allow the users chnage few things directly from the BA Clotheirs options page', 
+		'This page will allow the users to change few things directly from the BA Clotheirs options page', 
 		'bac_options_page_section_callback', 
 		'BAC_theme_options'
 	);
@@ -64,6 +64,13 @@ function bac_settings_init() {
 		'theme_options', 
 		'cd_options_page_section'  
 	);
+
+function my_setting_color() {
+    $options = get_option( 'bac_options_settings' );
+    ?>
+    <input type="text" name="bac_options_settings[color]" value="<?php echo esc_attr( $options['color'] ); ?>" />
+    <?php
+}
 
 	function bac_text_field_render() { 
 		$options = get_option( 'bac_options_settings' );
