@@ -533,7 +533,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #ff0055;
+	color: #bf80ff;
 }
 
 a:visited {
@@ -543,7 +543,7 @@ a:visited {
 a:hover,
 a:focus,
 a:active {
-	color: #990099;
+	color: #0000ff;
 }
 
 a:focus {
@@ -956,17 +956,19 @@ object {
 
 .widget-area{
 	float: right;
-	border: dotted 4px #000000;
+	border: dotted 4px #33bbff;
 	width: 250px;
-	margin: 5px;
+	margin: 20px 20px 20px 0px;
 	padding: 7px;
-	background-color: #f2f2f2;
+	background-color: #000000;
 	border-radius: 25px;
+	
 	
 }
 
 .widget-title{
 	text-align: center;
+	color: #fff;
 }
 
 #content{
@@ -999,33 +1001,80 @@ object {
 }
 
 input.search-field{
-	border: 3px solid #000000;
+	border: 3px solid #fff;
 	border-radius: 10px;
 	background-color: #33bbff;
 }
 
 input.search-submit{
 	margin: 10px 90px 10px 80px;
-	border: 3px solid #000000;
+	border: 3px solid #fff;
 }
 
+
 #comment{
-	border: 7px double #33bbff;
-	width: 1100px;
+	border: 4px dotted #000000;
+	width: 700px;
+	height: auto;
+	margin: 5px 100px 5px 60px;
 }
 
 body{
 	background-color: #000000;
+	color: #fff;
 }
 
 div.entry-content{
 	margin: 5px 150px 5px 150px;
 	border: 3px solid #fff;
-	height: 700px;
+	height: auto;
 	width: 700px;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
 }
 
 .content-area{
 	margin: auto;
 	float: left;
 }
+
+.entry-header{
+	color: #fff;
+	margin: 10px 150px 10px 150px;
+	border: 3px solid #fff;
+	height: auto;
+	width: 700px;
+}
+
+h1.entry-title{
+	text-align: center;
+	font-size: 25px;
+}
+
+p.comment-form-author{
+	margin: 10px 100px 10px 300px;
+	color: #fff;
+	padding: 5px;
+}
+p.comment-form-url{
+	margin: 10px 100px 10px 295px;
+	color: #fff;
+	padding: 5px;
+}
+p.comment-form-email{
+	margin: 10px 100px 10px 300px;
+	color: #fff;
+	padding: 5px;
+}
+
+p.form-submit{
+	margin: 10px 200px 10px 470px;
+}
+
+#submit{
+	border: 3px solid #fff;
+	color: #000000;
+	background-color: #33bbff;
+}
+
