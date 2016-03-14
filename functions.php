@@ -45,6 +45,7 @@ function ba_clotheirs_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'seasons', 900, 400, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -124,11 +125,30 @@ function ba_clotheirs_scripts() {
 
 	wp_enqueue_script( 'ba-clotheirs-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+  
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
+		 
 	}
 }
 add_action( 'wp_enqueue_scripts', 'ba_clotheirs_scripts' );
+
+
+/**
+ * Register a book post type.
+ */
+function ba_clothiers_custom_init() {
+	$args = array(
+        'public'             => true,
+        'label'              => __( 'seasons', 'textdomain' ),
+        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+    );
+   
+    register_post_type( 'seasons', $args );
+}
+add_action( 'init', 'ba_clothiers_custom_init' );
+
+
 
 /**
  * Implement the Custom Header feature.
@@ -160,3 +180,6 @@ require get_template_directory() . '/inc/jetpack.php';
 */
 require get_stylesheet_directory() .'/inc/options.php';
 
+
+// Create Slider
+require get_template_directory() . '/inc/slider.php';

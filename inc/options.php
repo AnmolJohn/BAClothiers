@@ -15,7 +15,7 @@ function bac_settings_init() {
 	
 	add_settings_section(
 		'bac_options_page_section', 
-		'Your section description', 
+		'This page will allow the users to change few things directly from the BA Clotheirs options page', 
 		'bac_options_page_section_callback', 
 		'BAC_theme_options'
 	);
@@ -23,21 +23,22 @@ function bac_settings_init() {
 	function bac_options_page_section_callback() { 
 		echo 'A description and detail about the section.';
 	}
+	
 
 	add_settings_field( 
-		'cd_text_field', 
+		'bac_text_field', 
 		'Enter your text', 
-		'cd_text_field_render', 
-		'theme_options', 
-		'cd_options_page_section' 
+		'bac_text_field_render', 
+		'BAC_theme_options', 
+		'bac_options_page_section' 
 	);
 
 	add_settings_field( 
-		'cd_checkbox_field', 
-		'Check your preference', 
-		'cd_checkbox_field_render', 
-		'theme_options', 
-		'cd_options_page_section'  
+		'bac_background_field', 
+		'Change Background Color', 
+		'bac_background_field_render', 
+		'BAC_theme_options', 
+		'bac_options_page_section'  
 	);
 
 	add_settings_field( 
@@ -49,11 +50,11 @@ function bac_settings_init() {
 	);
 	
 	add_settings_field( 
-		'cd_textarea_field', 
+		'bac_sitewidth_field', 
 		'Enter content in the textarea', 
-		'cd_textarea_field_render', 
-		'theme_options', 
-		'cd_options_page_section'  
+		'bac_sitewidth_field_render', 
+		'BAC_theme_options', 
+		'bac_options_page_section'  
 	);
 	
 	add_settings_field( 
@@ -64,18 +65,19 @@ function bac_settings_init() {
 		'cd_options_page_section'  
 	);
 
-	function cd_text_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+
+	function bac_text_field_render() { 
+		$options = get_option( 'bac_options_settings' );
 		?>
-		<input type="text" name="cd_options_settings[cd_text_field]" value="<?php if (isset($options['cd_text_field'])) echo $options['cd_text_field']; ?>" />
+		<input type="text" name="bac_options_settings[bac_text_field]" value="<?php if (isset($options['bac_text_field'])) echo $options['bac_text_field']; ?>" />
 		<?php
 	}
 	
-	function cd_checkbox_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+	function bac_background_field_render() { 
+		$options = get_option( 'bac_options_settings' );
 	?>
-		<input type="checkbox" name="cd_options_settings[cd_checkbox_field]" <?php if (isset($options['cd_checkbox_field'])) checked( 'on', ($options['cd_checkbox_field']) ) ; ?> value="on" />
-		<label>Turn it On</label> 
+		<input type="background" name="bac_options_settings[bac_background_field]" <?php if (isset($options['bac_background_field'])) checked( 'on', ($options['bac_background_field']) ) ; ?> value="on" />
+		<label>Choose Color</label> 
 		<?php	
 	}
 	
@@ -88,10 +90,10 @@ function bac_settings_init() {
 		<?php
 	}
 	
-	function cd_textarea_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+	function bac_sitewidth_field_render() { 
+		$options = get_option( 'bac_options_settings' );
 		?>
-		<textarea cols="40" rows="5" name="cd_options_settings[cd_textarea_field]"><?php if (isset($options['cd_textarea_field'])) echo $options['cd_textarea_field']; ?></textarea>
+		<textarea cols="40" rows="5" name="bac_options_settings[bac_sitewidth_field]"><?php if (isset($options['bac_sitewidth_field'])) echo $options['bac_sitewidth_field']; ?></textarea>
 		<?php
 	}
 

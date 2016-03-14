@@ -29,6 +29,8 @@ get_header(); ?>
 
 			endwhile; // End of the loop.
 			?>
+			<!-- Place somewhere in the <body> of your page -->
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

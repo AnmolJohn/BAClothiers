@@ -25,6 +25,8 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ba-clotheirs' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+
+
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
@@ -45,6 +47,31 @@
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ba-clotheirs' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
+       
+       <?php
+       $args = array(
+            'post_type' => 'seasons',
+            'post_per_page' => -1
+       	);
+       
+       $seasons = new WP_Query( $args );
+
+       if ( $seasons->have_posts() ): ?>
+       
+	       <div class="flexslider">
+	 			 <ul class="slides">
+	           <?php while( $seasons->have_posts() ): $seasons->the_post(); ?>
+	     		<li>
+	     		<?php the_post_thumbnail( 'seasons' ); ?>
+	   			</li>
+	   			<?php endwhile; ?>
+	 			 </ul>
+			</div>
+
+      <?php endif; ?>
+
+
+		
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
