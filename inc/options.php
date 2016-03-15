@@ -55,11 +55,11 @@ function bac_settings_init() {
 	);
 	
 	add_settings_field( 
-		'bac_sitewidth_field', 
+		'cd_sitewidth_field', 
 		'Enter content in the textarea', 
-		'bac_sitewidth_field_render', 
-		'BAC_theme_options', 
-		'bac_options_page_section'  
+		'cd_sitewidth_field_render', 
+		'theme_options', 
+		'cd_options_page_section'  
 	);
 
 /**
