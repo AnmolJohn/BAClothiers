@@ -29,7 +29,7 @@ function bac_settings_init() {
  */
 	add_settings_field( 
 		'bac_text_field', 
-		'Enter your text', 
+		'Enter Daily Greetings/Promotions', 
 		'bac_text_field_render', 
 		'BAC_theme_options', 
 		'bac_options_page_section' 
@@ -67,7 +67,7 @@ function bac_settings_init() {
  */	
 	add_settings_field( 
 		'bac_select_field', 
-		'Choose Font Color from the dropdown', 
+		'Choose Font Color', 
 		'bac_select_field_render', 
 		'BAC_theme_options', 
 		'bac_options_page_section'  
@@ -90,9 +90,9 @@ function bac_settings_init() {
 		$options = get_option( 'bac_options_settings' );
 		?>
 		<select name="bac_options_settings[bac_select_field]">
-			<option value="1" <?php if (isset($options['bac_select_field'])) selected( $options['bac_select_field'], 1 ); ?>>Option 1</option>
-			<option value="2" <?php if (isset($options['bac_select_field'])) selected( $options['bac_select_field'], 2 ); ?>>Option 2</option>
-			<option value="3" <?php if (isset($options['bac_select_field'])) selected( $options['bac_select_field'], 3 ); ?>>Option 3</option>
+			<option value="1" <?php if (isset($options['bac_select_field'])) selected( $options['bac_select_field'], 1 ); ?>>Red</option>
+			<option value="2" <?php if (isset($options['bac_select_field'])) selected( $options['bac_select_field'], 2 ); ?>>Dark Grey</option>
+			<option value="3" <?php if (isset($options['bac_select_field'])) selected( $options['bac_select_field'], 3 ); ?>>Navy</option>
 		</select>
 	<?php
 	}
