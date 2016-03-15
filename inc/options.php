@@ -128,6 +128,11 @@ function bac_settings_init() {
 	
 	function bac_theme_options_page(){ 
 		?>
+		
+		<?php
+		   settings_errors ();
+		?>
+		
 		<form action="options.php" method="post">
 			<h2>BA Clotheirs Options Page</h2>
 			<?php
