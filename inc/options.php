@@ -34,16 +34,16 @@ function bac_settings_init() {
 	);
 
 	add_settings_field( 
-		'bac_background_field', 
-		'Change Background Color', 
-		'bac_background_field_render', 
+		'bac_font_field', 
+		'Change Font Color', 
+		'bac_font_field_render', 
 		'BAC_theme_options', 
 		'bac_options_page_section'  
 	);
 
 	add_settings_field( 
 		'bac_radio_field', 
-		'Change Background color', 
+		'Change Background Color', 
 		'bac_radio_field_render', 
 		'BAC_theme_options', 
 		'bac_options_page_section'  
@@ -73,12 +73,13 @@ function bac_settings_init() {
 		<?php
 	}
 	
-	function bac_background_field_render() { 
+	function bac_font_field_render() { 
 		$options = get_option( 'bac_options_settings' );
 	?>
-		<input type="background" name="bac_options_settings[bac_background_field]" <?php if (isset($options['bac_background_field'])) checked( 'on', ($options['bac_background_field']) ) ; ?> value="on" />
-		<label>Choose Color</label> 
-		<?php	
+		<input type="font" name="bac_options_settings[bac_font_field]" <?php if (isset($options['bac_font_field'])) checked( $options['bac_font_field'], 1 ); ?> value="1" /> <label> Color 1</label><br />
+		<input type="font" name="bac_options_settings[bac_font_field]" <?php if (isset($options['bac_font_field'])) checked( $options['bac_font_field'], 2 ); ?> value="2" /> <label>Color 2</label><br />
+		<input type="font" name="bac_options_settings[bac_font_field]" <?php if (isset($options['bac_font_field'])) checked( $options['bac_font_field'], 3 ); ?> value="3" /> <label>Color 3</label>
+		<?php
 	}
 	
 	function bac_radio_field_render() { 
