@@ -36,11 +36,11 @@ function bac_settings_init() {
 	);
 
 	add_settings_field( 
-		'bac_font_field', 
+		'cd_font_field', 
 		'Change Font color', 
-		'bac_font_field_render', 
-		'BAC_theme_options', 
-		'bac_options_page_section'  
+		'cd_font_field_render', 
+		'cd_theme_options', 
+		'cd_options_page_section'  
 	);
 
 /**
@@ -67,7 +67,7 @@ function bac_settings_init() {
  */	
 	add_settings_field( 
 		'bac_select_field', 
-		'Choose from the dropdown', 
+		'Choose Font Color from the dropdown', 
 		'bac_select_field_render', 
 		'BAC_theme_options', 
 		'bac_options_page_section'  
