@@ -42,11 +42,11 @@ function bac_settings_init() {
 	);
 
 	add_settings_field( 
-		'cd_radio_field', 
-		'Choose an option', 
-		'cd_radio_field_render', 
-		'theme_options', 
-		'cd_options_page_section'  
+		'bac_radio_field', 
+		'Change Background color', 
+		'bac_radio_field_render', 
+		'BAC_theme_options', 
+		'bac_options_page_section'  
 	);
 	
 	add_settings_field( 
@@ -81,12 +81,12 @@ function bac_settings_init() {
 		<?php	
 	}
 	
-	function cd_radio_field_render() { 
-		$options = get_option( 'cd_options_settings' );
+	function bac_radio_field_render() { 
+		$options = get_option( 'bac_options_settings' );
 		?>
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 1 ); ?> value="1" /> <label>Option One</label><br />
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 2 ); ?> value="2" /> <label>Option Two</label><br />
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options['cd_radio_field'])) checked( $options['cd_radio_field'], 3 ); ?> value="3" /> <label>Option Three</label>
+		<input type="radio" name="bac_options_settings[bac_radio_field]" <?php if (isset($options['bac_radio_field'])) checked( $options['bac_radio_field'], 1 ); ?> value="1" /> <label>Color One</label><br />
+		<input type="radio" name="bac_options_settings[bac_radio_field]" <?php if (isset($options['bac_radio_field'])) checked( $options['bac_radio_field'], 2 ); ?> value="2" /> <label>Color Two</label><br />
+		<input type="radio" name="bac_options_settings[bac_radio_field]" <?php if (isset($options['bac_radio_field'])) checked( $options['bac_radio_field'], 3 ); ?> value="3" /> <label>Color Three</label>
 		<?php
 	}
 	
