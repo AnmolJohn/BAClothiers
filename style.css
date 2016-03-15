@@ -956,37 +956,15 @@ object {
 
 .widget-area{
 	float: right;
-<<<<<<< HEAD
 	border: dotted 4px #000000;
 	width: 250px;
 	margin: 5px;
 	padding: 7px;
-<<<<<<< HEAD
-}
-
-/* style for the slider*/
-=======
-	background-color: #f2f2f2;
-	border-radius: 25px;
-	
-=======
-	border: dotted 4px #33bbff;
-	width: 250px;
-	margin: 20px 20px 20px 0px;
-	padding: 7px;
-	background-color: #000000;
-	border-radius: 25px;
-	
-	
->>>>>>> origin/master
 }
 
 .widget-title{
 	text-align: center;
-<<<<<<< HEAD
-=======
 	color: #fff;
->>>>>>> origin/master
 }
 
 #content{
@@ -1019,25 +997,20 @@ object {
 }
 
 input.search-field{
-<<<<<<< HEAD
 	border: 3px solid #000000;
-=======
 	border: 3px solid #fff;
->>>>>>> origin/master
 	border-radius: 10px;
 	background-color: #33bbff;
 }
 
 input.search-submit{
 	margin: 10px 90px 10px 80px;
-<<<<<<< HEAD
 	border: 3px solid #000000;
 }
 
 #comment{
 	border: 7px double #33bbff;
 	width: 1100px;
-=======
 	border: 3px solid #fff;
 }
 
@@ -1047,39 +1020,31 @@ input.search-submit{
 	width: 700px;
 	height: auto;
 	margin: 5px 100px 5px 60px;
->>>>>>> origin/master
 }
 
 body{
 	background-color: #000000;
-<<<<<<< HEAD
-=======
-	color: #fff;
->>>>>>> origin/master
+    color: #fff;
+
 }
 
 div.entry-content{
 	margin: 5px 150px 5px 150px;
 	border: 3px solid #fff;
-<<<<<<< HEAD
 	height: 700px;
 	width: 700px;
-=======
 	height: auto;
 	width: 700px;
 	color: #fff;
 	padding: 10px;
 	text-align: center;
->>>>>>> origin/master
 }
 
 .content-area{
 	margin: auto;
 	float: left;
 }
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
+
 
 .entry-header{
 	color: #fff;
@@ -1120,4 +1085,4 @@ p.form-submit{
 	background-color: #33bbff;
 }
 
->>>>>>> origin/master
+
