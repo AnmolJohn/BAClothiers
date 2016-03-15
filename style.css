@@ -930,7 +930,8 @@ object {
 	display: block;
 }
 
-
+/*These codes will set the border style and radius, along with the colour of the border and the background colour. 
+It will also set the padding. */
 #masthead{
 	border: 7px double #33bbff;
 	padding: 5px;
@@ -956,10 +957,11 @@ object {
 
 .widget-area{
 	float: right;
-	border: dotted 4px #000000;
+	border: dotted 4px #33bbff;
 	width: 250px;
-	margin: 5px;
+	margin: 10px;
 	padding: 7px;
+	border-radius: 10px;
 }
 
 .widget-title{
@@ -991,13 +993,12 @@ object {
 	font-family: 'Lobster', cursive;
 }
 
-
+/*This code changes the colour of the entire background of the pages. */
 .home.blog.group-blog.hfeed{
 	background-color: #000000;
 }
 
 input.search-field{
-	border: 3px solid #000000;
 	border: 3px solid #fff;
 	border-radius: 10px;
 	background-color: #33bbff;
@@ -1008,13 +1009,7 @@ input.search-submit{
 	border: 3px solid #000000;
 }
 
-#comment{
-	border: 7px double #33bbff;
-	width: 1100px;
-	border: 3px solid #fff;
-}
-
-
+/*Puts border around the comment box and sets the margin and width of the actual box */
 #comment{
 	border: 4px dotted #000000;
 	width: 700px;
@@ -1025,7 +1020,6 @@ input.search-submit{
 body{
 	background-color: #000000;
     color: #fff;
-
 }
 
 div.entry-content{
@@ -1059,22 +1053,25 @@ h1.entry-title{
 	font-size: 25px;
 }
 
+/*These codes set the colour, padding, and margin for the forms where users enter their information */
 p.comment-form-author{
 	margin: 10px 100px 10px 300px;
 	color: #fff;
 	padding: 5px;
 }
+/*These codes set the colour, padding, and margin for the forms where users enter their information */
 p.comment-form-url{
 	margin: 10px 100px 10px 295px;
 	color: #fff;
 	padding: 5px;
 }
+/*These codes set the colour, padding, and margin for the forms where users enter their information */
 p.comment-form-email{
 	margin: 10px 100px 10px 300px;
 	color: #fff;
 	padding: 5px;
 }
-
+/*These codes set the colour, padding, and margin for the forms where users enter their information */
 p.form-submit{
 	margin: 10px 200px 10px 470px;
 }
@@ -1085,4 +1082,14 @@ p.form-submit{
 	background-color: #33bbff;
 }
 
+/*This code aligns the text in the entry-footer area to be in the center */
+.entry-footer{
+	text-align: center;
+	padding: 10px;
+}
+/*This code puts the information about who is logged into the site in the center */
+p.logged-in-as{
+	text-align: center;
+	padding: 10px;
+}
 
