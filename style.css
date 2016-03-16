@@ -1025,10 +1025,8 @@ body{
 div.entry-content{
 	margin: 5px 150px 5px 150px;
 	border: 3px solid #fff;
-	height: 700px;
 	width: 700px;
 	height: auto;
-	width: 700px;
 	color: #fff;
 	padding: 10px;
 	text-align: center;
@@ -1093,3 +1091,17 @@ p.logged-in-as{
 	padding: 10px;
 }
 
+
+
+/*  Resonsive design for a desktop screen with max-width of 1024px. */
+@media only screen and (max-width: 1024px) {
+.hfeed{width:100%}
+.site-header{width:100%;}
+.site-main{width:100%;overflow:auto;}
+.content-area{width:100%;float:left;display:inline;}
+.widget-area{width:93%;float:left;display:inline;}
+.site-footer{width:100%;float:left;}
+.site-title{width:100%}
+.site-info{width:100%; margin:auto;}
+input.search-field{width:93%;display:inline;}
+}
