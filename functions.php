@@ -178,7 +178,7 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
 * The code below will link to options page on Wordpress.
 */
-require get_stylesheet_directory() .'/inc/options.php';
+require get_template_directory() .'/inc/options.php';
 
 
 // Create Slider
