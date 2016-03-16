@@ -651,6 +651,7 @@ with a drop down list of the items contained in the menu. */
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
+		content: "≡";
 	}
 	.main-navigation ul {
 		display: block;
