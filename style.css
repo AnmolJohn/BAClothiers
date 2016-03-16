@@ -384,21 +384,23 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0;
 }
 
 ul {
-	list-style: disc;
+	list-style: none;
+	text-align:center;
 }
 
 ol {
-	list-style: decimal;
+	list-style: none;
+	text-align: center:
 }
 
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: 0;
 }
 
 dt {
@@ -532,6 +534,7 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
+/*Codes that set the colour for active, visited, and hovering of links. */
 a {
 	color: #bf80ff;
 }
@@ -558,7 +561,8 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-
+/*These codes align the text in the main navigation bar and set the style for when then screen becomes smaller. 
+They apply to the different levels of the codes as well, selling the position of the text from the dropdown menu*/
 
 .main-navigation {
 	clear: both;
@@ -642,7 +646,8 @@ a:active {
 .main-navigation.toggled ul {
 	display: block;
 }
-
+/*Responsive design for when the screen is at a minimum width of 37.5em. This creates a menu button
+with a drop down list of the items contained in the menu. */
 @media screen and (min-width: 37.5em) {
 	.menu-toggle {
 		display: none;
@@ -942,13 +947,14 @@ It will also set the padding. */
 	border-radius: 35px 7px 35px 7px;
 	
 }
-
+/*Sets the alignment of the text within the title of the site and the font-size and padding.*/
 .site-title{
 	text-align: center;
 	font-size: 80px;
 	padding: 15px;
 }
-
+/*Sets the properties of the site description such as the alignment of text, the border and border style, colours (background,
+font color, and border colour) and the padding. */
 .site-description{
 	text-align: center;
 	border: 7px #000000;
@@ -957,7 +963,8 @@ It will also set the padding. */
 	background-color: #33bbff;
 	font-family: 'Libre Baskerville', serif;
 }
-
+/*Codes for the sidebar pertaining to the border around and the radius, along with the colour of the border
+and the width and margin of the sidebar. */
 .widget-area{
 	float: right;
 	border: dotted 4px #33bbff;
@@ -966,19 +973,21 @@ It will also set the padding. */
 	padding: 7px;
 	border-radius: 10px;
 }
-
+/*This code sets the color and alignment of the titles that are apparent in the sidebar. */
 .widget-title{
 	text-align: center;
 	color: #fff;
 }
-
+/*This code sets a border around the content that is on the site. It changes the colour of the background for the
+content and sets a border around it with the colour and radius. */
 #content{
 	border: double 7px #33bbff;
 	margin: 5px;
 	background-color: #000000;
 	border-radius: 20px;
 }
-
+/*This code styles the information about the site at the bottom of the page by changing the font style, colour of the font,
+and adding a border in which the background is a different colour and the alignment of text is centered.*/
 .site-info{
 	border: solid 3px #33bbff;
 	padding: 5px;
@@ -991,7 +1000,7 @@ It will also set the padding. */
 	float: center;
 	font-family: 'Libre Baskerville', serif;
 }
-
+/*Font style for the title of the website. */
 .site-branding{
 	font-family: 'Lobster', cursive;
 }
@@ -1000,13 +1009,13 @@ It will also set the padding. */
 .home.blog.group-blog.hfeed{
 	background-color: #000000;
 }
-
+/*Style to the search bar in terms of the colour of the field and the border colour around it.*/
 input.search-field{
 	border: 3px solid #fff;
 	border-radius: 10px;
 	background-color: #33bbff;
 }
-
+/*Style for the submit button for the seach field in terms of the colour around the button. */
 input.search-submit{
 	margin: 10px 90px 10px 80px;
 	border: 3px solid #000000;
@@ -1076,7 +1085,7 @@ p.comment-form-email{
 p.form-submit{
 	margin: 10px 200px 10px 470px;
 }
-
+/*Colour of the submit button and style for when someone submits a comment.*/
 #submit{
 	border: 3px solid #fff;
 	color: #000000;
@@ -1097,7 +1106,31 @@ p.logged-in-as{
 /*  Resonsive design for a laptop screen with max-width of 1024px. 
 Referenced from http://theblogcourse.com/underscores-theme-tutorial-responsive/ 
 and https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints*/
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+.hfeed{width:100%;}
+.site-header{width:100%;margin:auto;}
+.site-main{width:100%;overflow:auto;margin:auto;}
+.content-area{width:100%;float:left;display:inline;}
+.widget-area{width:93%;float:left;display:inline;margin:auto;}
+.site-footer{width:100%;float:left;}
+.site-title{width:100%;margin:auto;}
+div.site-info{width:100%;margin:auto;}
+input.search-field{width:93%;display:inline;}
+p.site-title{width:100%;margin:auto;}
+p.site-description{width:100%;margin:auto;}
+div.site-branding{width:100%;margin:auto;}
+.site-content{width:100%;}
+h1.entry-title{width:100%;margin:auto;}
+.entry-header{width:100%;margin:auto;}
+div.entry-content{width:100%;margin:auto;}
+#comment{width:100%;margin:auto;}
+input.search-submit{width:100%;margin:auto;}
+.widget-title{width:100%;margin:auto;}
+a{width:100%;margin:auto;}
+ul{width:100%;margin:auto;}
+}
+/*
+@media only screen and (max-width: 480px){
 .hfeed{width:100%;}
 .site-header{width:100%;margin:auto;}
 .site-main{width:100%;overflow:auto;margin:auto;}
@@ -1105,18 +1138,19 @@ and https://responsivedesign.is/develop/browser-feature-support/media-queries-fo
 .widget-area{width:93%;float:left;display:inline;margin:auto;}
 .site-footer{width:100%;float:left;}
 .site-title{width:100%;}
-.site-info{width:100%;margin:auto;}
+div.site-info{width:100%;}
 input.search-field{width:93%;display:inline;}
-p.site-title{width:100%;}
-p.site-description{width:100%;}
+p.site-title{width:100%;margin:auto;}
+p.site-description{width:100%;margin:auto;}
 div.site-branding{width:100%;margin:auto;}
 .site-content{width:100%;}
-h1.entry-title{width:100%;margin:auto;}
-.entry-header{width:100%;margin:auto;}
-div.entry-content{width:100%;margin:auto;}
-#comment{width:100%;margin:auto;}
-	
+h1.entry-title{width:100%;}
+.entry-header{width:100%;}
+div.entry-content{width:100%;}
+#comment{width:100%;}
+input.search-submit{width:100%;}
+.widget-title{width:100%;}
+a{width:100%;}
+ul{width:100%;margin:auto;}
 }
-
-
-
+*/
