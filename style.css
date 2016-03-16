@@ -563,8 +563,9 @@ a:active {
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
+	float: center;
 	width: 100%;
+	text-align: center;
 }
 
 .main-navigation ul {
@@ -572,21 +573,23 @@ a:active {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+	float:center;
 }
 
 .main-navigation li {
-	float: left;
+	float: center;
 	position: relative;
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+	float:center;
 }
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
+	float: right;
 	position: absolute;
 	top: 1.5em;
 	left: -999em;
@@ -1023,7 +1026,7 @@ body{
 }
 
 div.entry-content{
-	margin: 5px 150px 5px 150px;
+	margin: 5px 10px 5px 80px;
 	border: 3px solid #fff;
 	width: 700px;
 	height: auto;
@@ -1040,7 +1043,7 @@ div.entry-content{
 
 .entry-header{
 	color: #fff;
-	margin: 10px 150px 10px 150px;
+	margin: 10px 10px 10px 80px;
 	border: 3px solid #fff;
 	height: auto;
 	width: 700px;
@@ -1091,18 +1094,29 @@ p.logged-in-as{
 	padding: 10px;
 }
 
-
-
-/*  Resonsive design for a laptop screen with max-width of 1024px. Referenced from http://theblogcourse.com/underscores-theme-tutorial-responsive/*/
+/*  Resonsive design for a laptop screen with max-width of 1024px. 
+Referenced from http://theblogcourse.com/underscores-theme-tutorial-responsive/ 
+and https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints*/
 @media only screen and (max-width: 1024px) {
-.hfeed{width:100%}
-.site-header{width:100%;}
-.site-main{width:100%;overflow:auto;}
+.hfeed{width:100%;}
+.site-header{width:100%;margin:auto;}
+.site-main{width:100%;overflow:auto;margin:auto;}
 .content-area{width:100%;float:left;display:inline;}
-.widget-area{width:93%;float:left;display:inline;}
+.widget-area{width:93%;float:left;display:inline;margin:auto;}
 .site-footer{width:100%;float:left;}
-.site-title{width:100%}
-.site-info{width:100%; margin:auto;}
+.site-title{width:100%;}
+.site-info{width:100%;margin:auto;}
 input.search-field{width:93%;display:inline;}
+p.site-title{width:100%;}
+p.site-description{width:100%;}
+div.site-branding{width:100%;margin:auto;}
+.site-content{width:100%;}
+h1.entry-title{width:100%;margin:auto;}
+.entry-header{width:100%;margin:auto;}
+div.entry-content{width:100%;margin:auto;}
+#comment{width:100%;margin:auto;}
+	
 }
+
+
 
