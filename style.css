@@ -661,22 +661,22 @@ with a drop down list of the items contained in the menu. */
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
-	margin: auto;
+	margin: 0 0 1.5em;
 	overflow: hidden;
 }
 
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-	float: center;
+	float: left;
 	width: 50%;
 }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-	float: center;
-	text-align: center;
+	float: right;
+	text-align: right;
 	width: 50%;
 }
 
@@ -953,6 +953,7 @@ It will also set the padding. */
 	text-align: center;
 	font-size: 80px;
 	padding: 15px;
+	margin:auto;
 }
 /*Sets the properties of the site description such as the alignment of text, the border and border style, colours (background,
 font color, and border colour) and the padding. */
@@ -963,6 +964,7 @@ font color, and border colour) and the padding. */
 	padding: 10px;
 	background-color: #33bbff;
 	font-family: 'Libre Baskerville', serif;
+	margin:auto;
 }
 /*Codes for the sidebar pertaining to the border around and the radius, along with the colour of the border
 and the width and margin of the sidebar. */
@@ -992,7 +994,7 @@ and adding a border in which the background is a different colour and the alignm
 .site-info{
 	border: solid 3px #33bbff;
 	padding: 5px;
-	margin: 2px 200px 2px 240px;
+	margin:auto;
 	text-align: center;
 	background-color: #000000;
 	color: #fff;
@@ -1004,11 +1006,13 @@ and adding a border in which the background is a different colour and the alignm
 /*Font style for the title of the website. */
 .site-branding{
 	font-family: 'Lobster', cursive;
+	margin:auto;
 }
 
 /*This code changes the colour of the entire background of the pages. */
 .home.blog.group-blog.hfeed{
 	background-color: #000000;
+	margin:auto;
 }
 /*Style to the search bar in terms of the colour of the field and the border colour around it.*/
 input.search-field{
@@ -1027,12 +1031,13 @@ input.search-submit{
 	border: 4px dotted #000000;
 	width: 700px;
 	height: auto;
-	margin: 5px 100px 5px 60px;
+	margin: auto;
 }
 
 body{
 	background-color: #000000;
     color: #fff;
+	margin:auto;
 }
 
 div.entry-content{
@@ -1042,7 +1047,8 @@ div.entry-content{
 	height: auto;
 	color: #fff;
 	padding: 10px;
-	text-align: center;
+	text-align: left;
+
 }
 
 .content-area{
@@ -1062,6 +1068,10 @@ div.entry-content{
 h1.entry-title{
 	text-align: center;
 	font-size: 25px;
+}
+
+.entry-meta{
+	text-align: center;
 }
 
 /*These codes set the colour, padding, and margin for the forms where users enter their information */
@@ -1085,15 +1095,18 @@ p.comment-form-email{
 /*These codes set the colour, padding, and margin for the forms where users enter their information */
 p.form-submit{
 	margin: auto;
-	float:left;
+	float:center;
 	padding: 10px;
+	text-align:center;
 }
+
 /*Colour of the submit button and style for when someone submits a comment.*/
 #submit{
 	border: 3px solid #fff;
 	color: #000000;
 	background-color: #33bbff;
 	margin: auto;
+	float:center;
 }
 
 /*This code aligns the text in the entry-footer area to be in the center */
@@ -1117,7 +1130,7 @@ and https://responsivedesign.is/develop/browser-feature-support/media-queries-fo
 .content-area{width:100%;float:left;padding:0;display:inline;}
 .widget-area{width:100%;float:left;padding:0;display:inline;margin:auto;}
 .site-footer{width:100%;padding:0;float:left;}
-.site-title{width:100%;padding:0;margin:auto;}
+.site-title{width:100%;padding:0;margin:auto;font-size:100%;}
 div.site-info{width:100%;margin:auto;padding:0;}
 input.search-field{width:100%;display:inline;padding:0;}
 .site-content{width:100%;padding:0;}
@@ -1135,4 +1148,16 @@ p.comment-form-email{width:100%;padding:0;margin:auto;}
 input#email{width:100%;margin:auto;}
 input#author{width:100%;margin:auto;}
 input#url{width:100%;margin:auto;}
+
+}
+
+
+@media only screen and (max-width: 480px) {
+.hfeed{width:100%;padding:0;}
+.site-header{width:100%;padding:0;margin:auto;}
+.site-main{width:100%;overflow:auto;padding:0;margin:auto;}
+.content-area{width:100%;float:left;padding:0;display:inline;}
+.widget-area{width:100%;float:left;padding:0;display:inline;margin:auto;}
+.site-footer{width:100%;padding:0;float:left;}
+.site-title{width:100%;padding:0;margin:auto;font-size:100%;}
 }
