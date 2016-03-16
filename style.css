@@ -946,6 +946,7 @@ It will also set the padding. */
 	padding: 5px;
 	background-color: #000000;
 	border-radius: 35px 7px 35px 7px;
+	margin:auto;
 	
 }
 /*Sets the alignment of the text within the title of the site and the font-size and padding.*/
@@ -972,7 +973,7 @@ and the width and margin of the sidebar. */
 	float: right;
 	border: dotted 4px #33bbff;
 	width: 250px;
-	margin: 10px;
+	margin: auto;
 	padding: 7px;
 	border-radius: 10px;
 }
@@ -1120,12 +1121,12 @@ p.logged-in-as{
 	padding: 10px;
 }
 
-/*  Resonsive design for a laptop screen with max-width of 1024px. 
+/*  Resonsive design for a desktop and laptop screen with max-width of 1200px. 
 Referenced from http://theblogcourse.com/underscores-theme-tutorial-responsive/ 
 and https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
 .hfeed{width:100%;padding:0;}
-.site-header{width:100%;padding:0;margin:auto;}
+.site-header{width:100%;padding:0;margin:auto;font-size:100%;}
 .site-main{width:100%;overflow:auto;padding:0;margin:auto;}
 .content-area{width:100%;float:left;padding:0;display:inline;}
 .widget-area{width:100%;float:left;padding:0;display:inline;margin:auto;}
@@ -1148,11 +1149,12 @@ p.comment-form-email{width:100%;padding:0;margin:auto;}
 input#email{width:100%;margin:auto;}
 input#author{width:100%;margin:auto;}
 input#url{width:100%;margin:auto;}
-
 }
 
-
-@media only screen and (max-width: 480px) {
+/*  Resonsive design for a mobile screen with min-width of 320px and max-width of 640px. 
+Referenced from http://theblogcourse.com/underscores-theme-tutorial-responsive/ 
+and https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px){
 .hfeed{width:100%;padding:0;}
 .site-header{width:100%;padding:0;margin:auto;}
 .site-main{width:100%;overflow:auto;padding:0;margin:auto;}
@@ -1161,3 +1163,17 @@ input#url{width:100%;margin:auto;}
 .site-footer{width:100%;padding:0;float:left;}
 .site-title{width:100%;padding:0;margin:auto;font-size:100%;}
 }
+
+/*  Resonsive design for a tablet screen with max-width of 1024px. 
+Referenced from http://theblogcourse.com/underscores-theme-tutorial-responsive/ 
+and https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints*/
+@media only screen and (max-width: 1024px){
+.hfeed{width:100%;padding:0;}
+.site-header{width:100%;padding:0;margin:auto;}
+.site-main{width:100%;overflow:auto;padding:0;margin:auto;}
+.content-area{width:100%;float:left;padding:0;display:inline;}
+.widget-area{width:100%;float:left;padding:0;display:inline;margin:auto;}
+.site-footer{width:100%;padding:0;float:left;}
+.site-title{width:100%;padding:0;margin:auto;font-size:100%;}
+}
+
