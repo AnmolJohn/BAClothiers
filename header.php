@@ -26,8 +26,11 @@
 
 	<header id="masthead" class="site-header" role="banner">
 
-      	
-			<p class="customGreeting"><?php print $options['red_text_field']; ?></p>
+      	<?php
+				$ = get_option( 'bac_options_settings' );
+			?>
+			<p class="customGreeting"><?php print $options['bac_text_field']; ?></p>
+			
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
