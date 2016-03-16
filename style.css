@@ -1093,8 +1093,53 @@ p.logged-in-as{
 
 
 
-/*  Resonsive design for a desktop screen with max-width of 1024px. */
-@media only screen and (max-width: 1024px) {
+/* Resonsive design for a laptop screen with max-width of 1200px. Referenced from http://theblogcourse.com/underscores-theme-tutorial-responsive/*/
+@media only screen and (max-width: 1200px) {
+.hfeed{width:100%}
+.site-header{width:100%;}
+.site-main{width:100%;overflow:auto;}
+.content-area{width:100%;float:left;display:inline;}
+.widget-area{width:93%;float:left;display:inline;}
+.site-footer{width:100%;float:left;}
+.site-title{width:100%}
+.site-info{width:100%; margin:auto;}
+input.search-field{width:93%;display:inline;}
+}
+
+/* Responsive design for mobile phones, both portrait and landscape screens with max-width of 640px. 
+Sizes referenced from http://theblogcourse.com/underscores-theme-tutorial-responsive/ 
+and https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 640px){
+.hfeed{width:100%}
+.site-header{width:100%;}
+.site-main{width:100%;overflow:auto;}
+.content-area{width:100%;float:left;display:inline;}
+.widget-area{width:93%;float:left;display:inline;}
+.site-footer{width:100%;float:left;}
+.site-title{width:100%}
+.site-info{width:100%; margin:auto;}
+input.search-field{width:93%;display:inline;}
+}
+
+/* Responsive design for a desktop screen with max-width of 1800px. 
+Sizes referenced from http://theblogcourse.com/underscores-theme-tutorial-responsive/ 
+and https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints*/
+@media only screen and (max-width: 1800px) {
+.hfeed{width:100%}
+.site-header{width:100%;}
+.site-main{width:100%;overflow:auto;}
+.content-area{width:100%;float:left;display:inline;}
+.widget-area{width:93%;float:left;display:inline;}
+.site-footer{width:100%;float:left;}
+.site-title{width:100%}
+.site-info{width:100%; margin:auto;}
+input.search-field{width:93%;display:inline;}
+}
+
+/* Responsive design for a tablet screen with max-width of 1024px. 
+Sizes referenced from http://theblogcourse.com/underscores-theme-tutorial-responsive/ 
+and https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints*/
+@media only screen and (min-device-width: 768px) and (max-width: 1024px) {
 .hfeed{width:100%}
 .site-header{width:100%;}
 .site-main{width:100%;overflow:auto;}
