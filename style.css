@@ -655,7 +655,6 @@ with a drop down list of the items contained in the menu. */
 	}
 	.main-navigation ul {
 		display: block;
-		content: "≡";
 	}
 }
 
