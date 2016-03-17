@@ -43,12 +43,6 @@
 			endif; ?>
 			
 			
-			<?php
-				$ = get_option( 'bac_options_settings' );
-			?>
-			<p class="customgreeting"><?php print $options['bac_text_field']; ?></p>
-			
-			
 			
 			
 		</div><!-- .site-branding -->
