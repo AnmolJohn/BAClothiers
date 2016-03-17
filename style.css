@@ -1066,6 +1066,8 @@ div.entry-content{
 
 .content-area{
 	margin: auto;
+	width:500px;
+	float:left;
 	
 }
 
@@ -1124,7 +1126,7 @@ p.form-submit{
 
 /*This code aligns the text in the entry-footer area to be in the center */
 .entry-footer{
-	float::left;
+	float:left;
 	padding: 10px;
 
 	
