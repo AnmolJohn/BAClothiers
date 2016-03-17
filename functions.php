@@ -155,29 +155,15 @@ add_action( 'init', 'ba_clothiers_custom_init' );
 
 function change_background_color() {
 	$options = get_option( 'bac_options_settings' );
-   	if ($options['bac_radio_field'] == 'white'){
-   		echo '<style type="text/css">
-           	.site-main {background:#ffffff !important} 
-         	</style>';
+   	if ($options['bac_radio_field'] == 'black'){
+   		echo '<style type="text/css"> .site-main {background:#000000 !important} </style>';
    	}elseif ($options['bac_radio_field'] == 'grey'){
-   		echo '<style type="text/css">
-           	.site-main {background:#808080 !important}
-         	</style>';
+   		echo '<style type="text/css"> .site-main {background:#808080 !important} </style>';
    	}elseif ($options['bac_radio_field'] == 'navy'){
-   		echo '<style type="text/css">
-           	.site-main {background: #0033cc !important}
-         	</style>';
+   		echo '<style type="text/css"> .site-main {background: #0033cc !important} </style>';
    	}
 }
 add_action('wp_enqueue_scripts', 'change_background_color');
-
-
-
-
-
-
-
-
 
 
 
