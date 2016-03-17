@@ -42,7 +42,11 @@
 			<?php
 			endif; ?>
 			
-			<p class= "dailyGreetings"> Good Morning!! </p>			
+			<?php   
+			         $dailyGreeting=get_option ('bac_options_settings');
+			         	         
+			?>
+			<p class= "dailyGreetings"><?php print $dailyGreeting['bac_text_field']  ?> </p>			
 			
 		</div><!-- .site-branding -->
 
