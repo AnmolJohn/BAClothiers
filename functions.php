@@ -157,15 +157,15 @@ function change_background_color() {
 	$options = get_option( 'bac_options_settings' );
    	if ($options['bac_radio_field'] == 'white'){
    		echo '<style type="text/css">
-           	.site {background:#ffffff !important} 
+           	.site-main {background:#ffffff !important} 
          	</style>';
    	}elseif ($options['bac_radio_field'] == 'grey'){
    		echo '<style type="text/css">
-           	.site {background:#808080 !important}
+           	.site-main {background:#808080 !important}
          	</style>';
    	}elseif ($options['bac_radio_field'] == 'navy'){
    		echo '<style type="text/css">
-           	.site {background: #0033cc !important}
+           	.site-main {background: #0033cc !important}
          	</style>';
    	}
 }
