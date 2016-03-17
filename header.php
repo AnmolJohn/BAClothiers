@@ -53,7 +53,8 @@
 		</nav><!-- #site-navigation -->
      
 
-     <!-- this code-->  
+     <!-- this code is an if and while loop that makes the custom post type called seasons on the dashboard. It only have featured images 
+     because this post is specifically used by the flex slider-->  
        <?php
        $args = array(
             'post_type' => 'seasons',
