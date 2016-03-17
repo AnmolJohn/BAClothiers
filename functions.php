@@ -149,6 +149,16 @@ function ba_clothiers_custom_init() {
 add_action( 'init', 'ba_clothiers_custom_init' );
 
 
+<?php 
+global $options;
+foreach ($options as $value) {
+    if (get_option($value['id']) === FALSE) {
+        $$value['id'] = $value['std'];
+    }
+    else {
+        $$value['id'] = get_option( $value['id'] );
+    }
+}?>
 
 /**
  * Implement the Custom Header feature.
