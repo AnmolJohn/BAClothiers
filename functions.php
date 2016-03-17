@@ -7,7 +7,9 @@
  * @package BA_Clotheirs
  */
  
-
+/**
+*this code is enqueing google fonts into the theme
+*/
 
 function ba_clothiers_google_fonts() {
 	wp_enqueue_style('ba-google-fonts', 'https://fonts.googleapis.com/css?family=Lobster|Libre+Baskerville', false );
@@ -47,7 +49,7 @@ function ba_clotheirs_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'seasons', 900, 400, true );
+	add_image_size( 'seasons', 400, 700, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -137,7 +139,7 @@ add_action( 'wp_enqueue_scripts', 'ba_clotheirs_scripts' );
 
 
 /**
- * Register a book post type.
+ * Register a custom post type called season with only these attributes. This post is only used for slider
  */
 function ba_clothiers_custom_init() {
 	$args = array(
@@ -182,5 +184,5 @@ require get_template_directory() . '/inc/jetpack.php';
 require get_template_directory() . '/inc/options.php';
 
 
-// Create Slider
+// This code here tells the theme where which folder to get the slider from. Currently is is situated in the inc folder
 require get_template_directory() . '/inc/slider.php';
