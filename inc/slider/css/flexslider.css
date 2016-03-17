@@ -78,6 +78,7 @@ html[xmlns] .flexslider .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .flexslider {
+  float: center;
   width:700px;
   height:400px;
   margin: 10% 20% 10% 20%;

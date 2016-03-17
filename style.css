@@ -975,10 +975,11 @@ and the width and margin of the sidebar. */
 .widget-area{
 	float: right;
 	border: dotted 4px #33bbff;
-	width: 250px;
-	margin: auto;
+	width: 300px;
+	margin: 0;
 	padding: 7px;
 	border-radius: 10px;
+	position: relative;
 }
 /*This code sets the color and alignment of the titles that are apparent in the sidebar. */
 .widget-title{
@@ -988,7 +989,6 @@ and the width and margin of the sidebar. */
 /*This code sets a border around the content that is on the site. It changes the colour of the background for the
 content and sets a border around it with the colour and radius. */
 #content{
-	
 	border: double 7px #33bbff;
 	margin: 5px;
 	background-color: #000000;
@@ -1055,11 +1055,12 @@ body{
 div.entry-content{
 	margin: 5px 10px 5px 80px;
 	border: 3px solid #fff;
-	width: 700px;
+	width: 860px;
 	height: auto;
 	color: #fff;
 	padding: 10px;
 	text-align: left;
+	float: left;
 
 }
 
@@ -1074,7 +1075,7 @@ div.entry-content{
 	margin: 10px 10px 10px 80px;
 	border: 3px solid #fff;
 	height: auto;
-	width: 700px;
+	width: 860px;
 }
 
 h1.entry-title{
