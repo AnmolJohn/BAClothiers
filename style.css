@@ -1137,6 +1137,16 @@ p.logged-in-as{
 
 }
 
+
+.dailyGreetings{
+text-align: center;
+Color: white;
+font-size: 2em;
+
+
+
+}
+
 /*  Resonsive design for a desktop and laptop screen with max-width of 1200px. 
 Referenced from http://theblogcourse.com/underscores-theme-tutorial-responsive/ 
 and https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints*/

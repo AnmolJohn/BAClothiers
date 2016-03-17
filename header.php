@@ -42,7 +42,7 @@
 			<?php
 			endif; ?>
 			
-			<p> Good Morning!! </p>			
+			<p class= "dailyGreetings"> Good Morning!! </p>			
 			
 		</div><!-- .site-branding -->
 
