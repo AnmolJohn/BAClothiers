@@ -668,14 +668,14 @@ with a drop down list of the items contained in the menu. */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-	float: left;
+	float: none;
 	width: 50%;
 }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-	float: right;
+	float: none;
 	text-align: right;
 	width: 50%;
 }
@@ -1114,11 +1114,13 @@ p.form-submit{
 .entry-footer{
 	text-align: center;
 	padding: 10px;
+	
 }
 /*This code puts the information about who is logged into the site in the center */
 p.logged-in-as{
-	text-align: center;
+	text-align: left;
 	padding: 10px;
+	margin:auto;
 }
 
 /*  Resonsive design for a desktop and laptop screen with max-width of 1200px. 
@@ -1175,4 +1177,8 @@ and https://responsivedesign.is/develop/browser-feature-support/media-queries-fo
 .widget-area{width:100%;float:left;padding:0;display:inline;margin:auto;}
 .site-footer{width:100%;padding:0;float:left;}
 .site-title{width:100%;padding:0;margin:auto;}
+}
+
+figcaption.wp-caption-text{
+	color:#fff;
 }
