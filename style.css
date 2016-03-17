@@ -1041,16 +1041,15 @@ input.search-submit{
 /*Puts border around the comment box and sets the margin and width of the actual box */
 #comment{
 	border: 4px dotted #000000;
-	width: 100%;
-	height: auto;
-	margin: auto;
+	float: center;
 	padding: 10px;
 }
 
-p.comment-form-comment{margin:auto;
-
-padding: 10px;
-width:100%}
+p.comment-form-comment{
+	margin:auto;
+	padding: auto;
+	float: center;
+}
 
 body{
 	background-color: #000000;
@@ -1148,7 +1147,7 @@ p.logged-in-as{
 
 .dailyGreetings{
 text-align: center;
-Color: white;
+color: white;
 font-size: 2em;
 
 
@@ -1185,6 +1184,7 @@ input#author{width:100%;margin:auto;}
 input#url{width:100%;margin:auto;}
 
 .site{width:100%;padding:0;margin:auto;}
+p.comment-form-comment{width:100%;padding:0;margin:auto;}
 }
 
 /*  Resonsive design for a mobile screen with min-width of 320px and max-width of 640px. 
@@ -1199,6 +1199,7 @@ and https://responsivedesign.is/develop/browser-feature-support/media-queries-fo
 .site-footer{width:100%;padding:0;float:left;}
 .site-title{width:100%;padding:0;margin:auto;}
 .site{width:100%;padding:0;margin:auto;float:left;}
+p.comment-form-comment{width:100%;padding:0;margin:auto;}
 }
 
 /*  Resonsive design for a tablet screen with max-width of 1024px. 
@@ -1213,6 +1214,7 @@ and https://responsivedesign.is/develop/browser-feature-support/media-queries-fo
 .site-footer{width:100%;padding:0;float:left;}
 .site-title{width:100%;padding:0;margin:auto;}
 .site{width:100%;padding:0;margin:auto;}
+p.comment-form-comment{width:100%;padding:0;margin:auto;}
 }
 /*Changes the colour of the caption for photos on wordpress posts.*/
 figcaption.wp-caption-text{

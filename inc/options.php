@@ -5,7 +5,7 @@
 
 /**
  * Adding submenu item. This Code has been done with help from the Lecture slides 
- and https://codex.wordpress.org/Creating_Options_Pages.
+* and https://codex.wordpress.org/Creating_Options_Pages.
  */	
 function bac_add_submenu() {
        add_submenu_page( 'themes.php', 'BA Clotheirs Options Page', 'BAC Theme Options', 'manage_options', 'theme_options', 'bac_theme_options_page');
