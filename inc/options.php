@@ -4,7 +4,7 @@
 */
 
 /**
- * Adding submenu item
+ * Adding submenu item. This Code has been done with help from the Lecture slides.
  */	
 function bac_add_submenu() {
        add_submenu_page( 'themes.php', 'BA Clotheirs Options Page', 'BAC Theme Options', 'manage_options', 'theme_options', 'bac_theme_options_page');
@@ -36,7 +36,7 @@ function bac_settings_init() {
 	add_settings_field('bac_radio_field', 'Change Background Color', 'bac_radio_field_render', 'BAC_theme_options', 'bac_options_page_section' );
 	
 /**
- * For changing background color.
+ * For changing the background color.
  */	
 
 	function bac_radio_field_render() { 
