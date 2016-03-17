@@ -42,8 +42,7 @@
 			<?php
 			endif; ?>
 			
-			
-			
+			<p> Good Morning!! </p>			
 			
 		</div><!-- .site-branding -->
 
