@@ -988,6 +988,7 @@ and the width and margin of the sidebar. */
 /*This code sets a border around the content that is on the site. It changes the colour of the background for the
 content and sets a border around it with the colour and radius. */
 #content{
+	
 	border: double 7px #33bbff;
 	margin: 5px;
 	background-color: #000000;
