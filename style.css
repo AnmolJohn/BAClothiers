@@ -669,7 +669,7 @@ with a drop down list of the items contained in the menu. */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-	text-align: center;
+	text-align: right;
 	width: 100%;
 	padding:10px;
 }
@@ -677,7 +677,7 @@ with a drop down list of the items contained in the menu. */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-	text-align: center;
+	text-align: right;
 	padding:10px;
 	width: 100%;
 }
@@ -1041,16 +1041,16 @@ input.search-submit{
 /*Puts border around the comment box and sets the margin and width of the actual box */
 #comment{
 	border: 4px dotted #000000;
-	width: 500px;
+	width: 100%;
 	height: auto;
 	margin: auto;
-	float:right;
 	padding: 10px;
 }
 
 p.comment-form-comment{margin:auto;
-width: 700px;
-padding: 20px;}
+
+padding: 10px;
+width:100%}
 
 body{
 	background-color: #000000;
@@ -1117,8 +1117,6 @@ p.comment-form-email{
 p.form-submit{
 	margin: auto;
 	padding: 10px;
-	text-align:right;
-	float:right;
 }
 
 
@@ -1134,7 +1132,7 @@ p.form-submit{
 
 /*This code aligns the text in the entry-footer area to be in the center */
 .entry-footer{
-	float:center;
+	text-align:right;
 	padding: 10px;
 
 	
