@@ -172,11 +172,11 @@ function change_background_color() {
 function change_font_color() {
 	$options = get_option( 'bac_options_settings' );
    	if ($options['bac_select_field'] == 'red'){
-   		echo '<style type="text/css"> .site-main {font:#d92626 !important} </style>';
+   		echo '<style type="text/css"> .site-main {font-color:#d92626 !important} </style>';
    	}elseif ($options['bac_select_field'] == 'white'){
-   		echo '<style type="text/css"> .site-main {font:#ffffff !important} </style>';
+   		echo '<style type="text/css"> .site-main {font-color:#ffffff !important} </style>';
    	}elseif ($options['bac_select_field'] == 'navy'){
-   		echo '<style type="text/css"> .site-main {font: #0033cc !important} </style>';
+   		echo '<style type="text/css"> .site-main {font-color: #0033cc !important} </style>';
    	}
 }
       add_action('wp_enqueue_scripts', 'change_font_color');
