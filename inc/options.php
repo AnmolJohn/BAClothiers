@@ -7,24 +7,15 @@
  * Adding submenu item
  */	
 function bac_add_submenu() {
-<<<<<<< Updated upstream
-
-		$page = add_submenu_page( 'themes.php', 'BA Clotheirs Options Page', 'BAC Theme Options', 'manage_options', 'theme_options', 'bac_theme_options_page');
+       add_submenu_page( 'themes.php', 'BA Clotheirs Options Page', 'BAC Theme Options', 'manage_options', 'theme_options', 'bac_theme_options_page');
 
 	}
-add_action( 'admin_menu' . $page, 'bac_add_submenu' );
+  add_action( 'admin_menu', 'bac_add_submenu' );
 
-		
-
-=======
-		add_submenu_page( 'themes.php', 'BA Clotheirs Options Page', 'BAC Theme Options', 'manage_options', 'theme_options', 'bac_theme_options_page');
-	     }
-      add_action( 'admin_menu', 'bac_add_submenu' );
 	
 /**
  * Creating and registering the settings.
  */
->>>>>>> Stashed changes
 function bac_settings_init() { 
 	     register_setting( 'BAC_theme_options', 'bac_options_settings' );
 	
