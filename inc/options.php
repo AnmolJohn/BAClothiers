@@ -42,9 +42,9 @@ function bac_settings_init() {
 	function bac_radio_field_render() { 
 		$options = get_option( 'bac_options_settings' );
 		?>
-		<input type="radio" name="bac_options_settings[bac_radio_field]" <?php if (isset($options['bac_radio_field'])) checked( $options['bac_radio_field'], 1 ); ?> value="1" /> <label>White</label><br />
-		<input type="radio" name="bac_options_settings[bac_radio_field]" <?php if (isset($options['bac_radio_field'])) checked( $options['bac_radio_field'], 2 ); ?> value="2" /> <label>Grey</label><br />
-		<input type="radio" name="bac_options_settings[bac_radio_field]" <?php if (isset($options['bac_radio_field'])) checked( $options['bac_radio_field'], 3 ); ?> value="3" /> <label>Navy</label>
+		<input type="radio" name="bac_options_settings[bac_radio_field]" <?php if (isset($options['bac_radio_field'])) checked( $options['bac_radio_field'], "white" ); ?> value="white" /> <label>White</label><br />
+		<input type="radio" name="bac_options_settings[bac_radio_field]" <?php if (isset($options['bac_radio_field'])) checked( $options['bac_radio_field'], "grey" ); ?> value="grey" /> <label>Grey</label><br />
+		<input type="radio" name="bac_options_settings[bac_radio_field]" <?php if (isset($options['bac_radio_field'])) checked( $options['bac_radio_field'], "navy" ); ?> value="navy" /> <label>Navy</label>
 		<?php
 	}
 

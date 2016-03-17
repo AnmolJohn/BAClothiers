@@ -153,6 +153,36 @@ function ba_clothiers_custom_init() {
 add_action( 'init', 'ba_clothiers_custom_init' );
 
 
+function change_background_color() {
+	$options = get_option( 'bac_options_settings' );
+   	if ($options['bac_radio_field'] == 'white'){
+   		echo '<style type="text/css">
+           	.site {background:#ffffff}
+           	#content{background:#ffffff}
+         	</style>';
+   	}elseif ($options['bac_radio_field'] == 'grey'){
+   		echo '<style type="text/css">
+           	.site {background:#EEEEEE}
+           	#content{background:#EEEEEE}
+         	</style>';
+   	}elseif ($options['bac_radio_field'] == 'navy'){
+   		echo '<style type="text/css">
+           	.site {background: rgba(0, 255, 0, 0.1)}
+           	#content{background: rgba(0, 255, 0, 0.1)}
+         	</style>';
+   	}
+}
+add_action('wp_enqueue_scripts', 'change_background_color');
+
+
+
+
+
+
+
+
+
+
 
 /**
  * Implement the Custom Header feature.
