@@ -986,15 +986,15 @@ and the width and margin of the sidebar. */
 	text-align: center;
 	color: #fff;
 }
-/*This code sets a border around the content that is on the site. It changes the colour of the background for the
+/*This code changes the colour of the background for the
 content and sets a border around it with the colour and radius. */
 #content{
-	border: double 7px #33bbff;
+	
 	margin: 5px;
 	background-color: #000000;
 	border-radius: 20px;
 }
-
+/*This code sets the border for the entire site. It also sets the padding and border radius */
 .site{
 	border: double 7px #33bbff;
 	margin:auto;
@@ -1180,7 +1180,7 @@ and https://responsivedesign.is/develop/browser-feature-support/media-queries-fo
 .widget-area{width:100%;float:left;padding:0;display:inline;margin:auto;}
 .site-footer{width:100%;padding:0;float:left;}
 .site-title{width:100%;padding:0;margin:auto;}
-.site{width:100%;padding:0;margin:auto;}
+.site{width:100%;padding:0;margin:auto;float:left;}
 }
 
 /*  Resonsive design for a tablet screen with max-width of 1024px. 
