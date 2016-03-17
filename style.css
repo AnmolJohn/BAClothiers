@@ -661,22 +661,25 @@ with a drop down list of the items contained in the menu. */
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
-	margin: 0 0 1.5em;
+	margin: auto;
 	overflow: hidden;
+	padding:10px;
+	text-align:center;
 }
 
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-	float: none;
+	text-align: center;
 	width: 50%;
+	padding:10px;
 }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-	float: none;
-	text-align: right;
+	text-align: center;
+	padding:10px;
 	width: 50%;
 }
 
@@ -1112,15 +1115,17 @@ p.form-submit{
 
 /*This code aligns the text in the entry-footer area to be in the center */
 .entry-footer{
-	text-align: center;
+	text-align:center;
 	padding: 10px;
+
 	
 }
 /*This code puts the information about who is logged into the site in the center */
 p.logged-in-as{
-	text-align: left;
+	text-align:center;
 	padding: 10px;
 	margin:auto;
+
 }
 
 /*  Resonsive design for a desktop and laptop screen with max-width of 1200px. 
@@ -1178,7 +1183,7 @@ and https://responsivedesign.is/develop/browser-feature-support/media-queries-fo
 .site-footer{width:100%;padding:0;float:left;}
 .site-title{width:100%;padding:0;margin:auto;}
 }
-
+/*Changes the colour of the caption for photos on wordpress posts.*/
 figcaption.wp-caption-text{
 	color:#fff;
 }

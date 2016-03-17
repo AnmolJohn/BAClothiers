@@ -7,6 +7,8 @@
  * @package BA_Clotheirs
  */
  
+
+
 function ba_clothiers_google_fonts() {
 	wp_enqueue_style('ba-google-fonts', 'https://fonts.googleapis.com/css?family=Lobster|Libre+Baskerville', false );
 }
@@ -149,6 +151,16 @@ function ba_clothiers_custom_init() {
 add_action( 'init', 'ba_clothiers_custom_init' );
 
 
+<?php 
+global $options;
+foreach ($options as $value) {
+    if (get_option($value['id']) === FALSE) {
+        $$value['id'] = $value['std'];
+    }
+    else {
+        $$value['id'] = get_option( $value['id'] );
+    }
+}?>
 
 /**
  * Implement the Custom Header feature.
@@ -176,9 +188,8 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
-* The code below will link to options page on Wordpress.
-*/
-require get_template_directory() .'/inc/options.php';
+* The code below will link to options page on Wordpress.*/
+require get_template_directory() . '/inc/options.php';
 
 
 // Create Slider
