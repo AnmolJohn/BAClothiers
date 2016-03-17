@@ -158,17 +158,14 @@ function change_background_color() {
    	if ($options['bac_radio_field'] == 'white'){
    		echo '<style type="text/css">
            	.site {background:#ffffff}
-           	#content{background:#ffffff}
          	</style>';
    	}elseif ($options['bac_radio_field'] == 'grey'){
    		echo '<style type="text/css">
            	.site {background:#EEEEEE}
-           	#content{background:#EEEEEE}
          	</style>';
    	}elseif ($options['bac_radio_field'] == 'navy'){
    		echo '<style type="text/css">
            	.site {background: rgba(0, 255, 0, 0.1)}
-           	#content{background: rgba(0, 255, 0, 0.1)}
          	</style>';
    	}
 }
