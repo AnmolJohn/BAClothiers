@@ -152,7 +152,9 @@ function ba_clothiers_custom_init() {
 }
 add_action( 'init', 'ba_clothiers_custom_init' );
 
-
+/**
+ * This code below will give different options to chnage the background color of the website to either black, grey or navy.
+ */
 function change_background_color() {
 	$options = get_option( 'bac_options_settings' );
    	if ($options['bac_radio_field'] == 'black'){
@@ -163,7 +165,7 @@ function change_background_color() {
    		echo '<style type="text/css"> .site-main {background: #0033cc !important} </style>';
    	}
 }
-add_action('wp_enqueue_scripts', 'change_background_color');
+      add_action('wp_enqueue_scripts', 'change_background_color');
 
 
 
