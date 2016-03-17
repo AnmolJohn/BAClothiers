@@ -44,9 +44,9 @@
 			
 			
 			<?php
-				$options = get_option( 'bac_options_settings' );
+				$ = get_option( 'bac_options_settings' );
 			?>
-			<p class="customGreeting"><?php print $options['bac_text_field']; ?></p>
+			<p class="customgreeting"><?php print $options['bac_text_field']; ?></p>
 			
 			
 			
