@@ -1054,7 +1054,7 @@ div.entry-content{
 
 .content-area{
 	margin: auto;
-	float: left;
+	
 }
 
 
@@ -1126,12 +1126,12 @@ Referenced from http://theblogcourse.com/underscores-theme-tutorial-responsive/
 and https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints*/
 @media screen and (max-width: 1200px) {
 .hfeed{width:100%;padding:0;}
-.site-header{width:100%;padding:0;margin:auto;font-size:100%;}
+.site-header{width:100%;padding:0;margin:auto;}
 .site-main{width:100%;overflow:auto;padding:0;margin:auto;}
-.content-area{width:100%;float:left;padding:0;display:inline;}
-.widget-area{width:100%;float:left;padding:0;display:inline;margin:auto;}
-.site-footer{width:100%;padding:0;float:left;}
-.site-title{width:100%;padding:0;margin:auto;font-size:100%;}
+.content-area{width:100%;padding:0;display:inline;}
+.widget-area{width:100%;padding:0;display:inline;margin:auto;}
+.site-footer{width:100%;padding:0;}
+.site-title{width:100%;padding:0;margin:auto;}
 div.site-info{width:100%;margin:auto;padding:0;}
 input.search-field{width:100%;display:inline;padding:0;}
 .site-content{width:100%;padding:0;}
@@ -1161,7 +1161,7 @@ and https://responsivedesign.is/develop/browser-feature-support/media-queries-fo
 .content-area{width:100%;float:left;padding:0;display:inline;}
 .widget-area{width:100%;float:left;padding:0;display:inline;margin:auto;}
 .site-footer{width:100%;padding:0;float:left;}
-.site-title{width:100%;padding:0;margin:auto;font-size:100%;}
+.site-title{width:100%;padding:0;margin:auto;}
 }
 
 /*  Resonsive design for a tablet screen with max-width of 1024px. 
@@ -1174,6 +1174,5 @@ and https://responsivedesign.is/develop/browser-feature-support/media-queries-fo
 .content-area{width:100%;float:left;padding:0;display:inline;}
 .widget-area{width:100%;float:left;padding:0;display:inline;margin:auto;}
 .site-footer{width:100%;padding:0;float:left;}
-.site-title{width:100%;padding:0;margin:auto;font-size:100%;}
+.site-title{width:100%;padding:0;margin:auto;}
 }
-
