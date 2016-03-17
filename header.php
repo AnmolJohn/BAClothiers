@@ -41,6 +41,16 @@
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
+			
+			
+			<?php
+				$options = get_option( 'bac_options_settings' );
+			?>
+			<p class="customGreeting"><?php print $options['bac_text_field']; ?></p>
+			
+			
+			
+			
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

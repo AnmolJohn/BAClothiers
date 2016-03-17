@@ -21,20 +21,20 @@ function bac_settings_init() {
 	
 	
 /**
- * For changing background color.
+ * The code below is for changing the background color of the theme. 
  */
 	add_settings_field('bac_radio_field', 'Change Background Color', 'bac_radio_field_render', 'BAC_theme_options', 'bac_options_page_section' );
 	
 
 /**
- * To enter greeting text.
+ * The code below is for entering daily greeting or promotions on the website.
  */
 	add_settings_field('bac_text_field','Enter Daily Greetings/Promotions', 'bac_text_field_render', 'BAC_theme_options', 'bac_options_page_section');
 
 
 
 /**
- * Adding Font Color Change option
+ * This code below, allows user to change the color of the font from thre given colors.
  */	
 	add_settings_field('bac_select_field', 'Choose Font Color','bac_select_field_render','BAC_theme_options','bac_options_page_section' );
 
@@ -78,9 +78,7 @@ function bac_settings_init() {
 	function bac_theme_options_page(){ 
 		?>
 		
-		<?php
-		      settings_errors ();
-		?>
+		<?php settings_errors (); ?>
 		
 		<form action="options.php" method="post">
 			<h2>BAC Options Page</h2>
