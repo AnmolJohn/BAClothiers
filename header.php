@@ -41,6 +41,7 @@
 				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 			<?php
 			endif; ?>
+			
 			<!--  This 2 line code below is for the daily greeting change that can be done
 			from the BAC theme options page  -->
 			<?php   $dailyGreeting=get_option ('bac_options_settings'); ?>

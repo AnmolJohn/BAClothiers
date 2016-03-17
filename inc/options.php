@@ -63,9 +63,6 @@ function bac_settings_init() {
 		<input type="text" name="bac_options_settings[bac_text_field]" value="<?php if (isset($options['bac_text_field'])) echo $options['bac_text_field']; ?>" />
 		<?php
 	}
-
-
-
 /**
  * This code below, allows user to change the color of the font from thre given colors.
  */	

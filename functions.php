@@ -168,7 +168,10 @@ function change_background_color() {
 }
       add_action('wp_enqueue_scripts', 'change_background_color');
 
-
+/**
+ * This code below will give different options to the user to change the font color
+  of the website to either red, white or navy.
+ */
 function change_font_color() {
 	$options = get_option( 'bac_options_settings' );
    	if ($options['bac_select_field'] == 'red'){
