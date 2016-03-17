@@ -988,14 +988,9 @@ and the width and margin of the sidebar. */
 /*This code sets a border around the content that is on the site. It changes the colour of the background for the
 content and sets a border around it with the colour and radius. */
 #content{
+	border: double 7px #33bbff;
 	margin: 5px;
 	background-color: #000000;
-	border-radius: 20px;
-}
-
-.page{
-	border: double 7px #33bbff;
-	padding: 15px;
 	border-radius: 20px;
 }
 /*This code styles the information about the site at the bottom of the page by changing the font style, colour of the font,
@@ -1161,7 +1156,6 @@ p.comment-form-email{width:100%;padding:0;margin:auto;}
 input#email{width:100%;margin:auto;}
 input#author{width:100%;margin:auto;}
 input#url{width:100%;margin:auto;}
-.page{width:100%;margin:auto;padding:0;}
 }
 
 /*  Resonsive design for a mobile screen with min-width of 320px and max-width of 640px. 
@@ -1189,7 +1183,7 @@ and https://responsivedesign.is/develop/browser-feature-support/media-queries-fo
 .site-footer{width:100%;padding:0;float:left;}
 .site-title{width:100%;padding:0;margin:auto;}
 }
-/*Changes the colour of the caption for photos on wodpress*/
+/*Changes the colour of the caption for photos on wordpress posts.*/
 figcaption.wp-caption-text{
 	color:#fff;
 }
