@@ -5,17 +5,13 @@
 
 	
 function bac_add_submenu() {
-<<<<<<< HEAD
+
 		$page = add_submenu_page( 'themes.php', 'BA Clotheirs Options Page', 'BAC Theme Options', 'manage_options', 'theme_options', 'bac_theme_options_page');
 
 	}
 add_action( 'admin_menu' . $page, 'bac_add_submenu' );
-=======
-		add_submenu_page( 'themes.php', 'BA Clotheirs Options Page', 'BAC Theme Options', 'manage_options', 'theme_options', 'bac_theme_options_page');
-	     }
-      add_action( 'admin_menu', 'bac_add_submenu' );
->>>>>>> origin/master
-	
+
+		
 
 function bac_settings_init() { 
 	     register_setting( 'BAC_theme_options', 'bac_options_settings' );
@@ -49,6 +45,14 @@ function bac_settings_init() {
 /**
  * For changing background color.
  */	
+	
+	add_settings_field('bac_select_field', 'Choose Font Color','bac_select_field_render','BAC_theme_options','bac_options_page_section' );
+
+
+/**
+ * For changing background color.
+ */	
+
 	function bac_radio_field_render() { 
 		$options = get_option( 'bac_options_settings' );
 		?>
