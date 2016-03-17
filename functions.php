@@ -157,15 +157,15 @@ function change_background_color() {
 	$options = get_option( 'bac_options_settings' );
    	if ($options['bac_radio_field'] == 'white'){
    		echo '<style type="text/css">
-           	.home.blog.group-blog.hfeed {background:#ffffff}
+           	.home.blog.group-blog.hfeed {background:#ffffff !important} 
          	</style>';
    	}elseif ($options['bac_radio_field'] == 'grey'){
    		echo '<style type="text/css">
-           	.home.blog.group-blog.hfeed {background:#808080}
+           	.home.blog.group-blog.hfeed {background:#808080 !important}
          	</style>';
    	}elseif ($options['bac_radio_field'] == 'navy'){
    		echo '<style type="text/css">
-           	.home.blog.group-blog.hfeed {background: #0033cc}
+           	.home.blog.group-blog.hfeed {background: #0033cc !important}
          	</style>';
    	}
 }
