@@ -4,7 +4,8 @@
 */
 
 /**
- * Adding submenu item. This Code has been done with help from the Lecture slides.
+ * Adding submenu item. This Code has been done with help from the Lecture slides 
+ and https://codex.wordpress.org/Creating_Options_Pages.
  */	
 function bac_add_submenu() {
        add_submenu_page( 'themes.php', 'BA Clotheirs Options Page', 'BAC Theme Options', 'manage_options', 'theme_options', 'bac_theme_options_page');
@@ -78,9 +79,9 @@ function bac_settings_init() {
 		$options = get_option( 'bac_options_settings' );
 		?>
 		<select name="bac_options_settings[bac_select_field]">
-			<option value="1" <?php if (isset($options['bac_select_field'])) selected( $options['bac_select_field'], 1 ); ?>>Red</option>
-			<option value="2" <?php if (isset($options['bac_select_field'])) selected( $options['bac_select_field'], 2 ); ?>>Dark Grey</option>
-			<option value="3" <?php if (isset($options['bac_select_field'])) selected( $options['bac_select_field'], 3 ); ?>>Navy</option>
+			<option value="red" <?php if (isset($options['bac_select_field'])) selected( $options['bac_select_field'], "red" ); ?>>Red</option>
+			<option value="white" <?php if (isset($options['bac_select_field'])) selected( $options['bac_select_field'], "white" ); ?>>White</option>
+			<option value="navy" <?php if (isset($options['bac_select_field'])) selected( $options['bac_select_field'], "navy" ); ?>>Navy</option>
 		</select>
 	<?php
 	}

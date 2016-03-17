@@ -153,7 +153,8 @@ function ba_clothiers_custom_init() {
 add_action( 'init', 'ba_clothiers_custom_init' );
 
 /**
- * This code below will give different options to chnage the background color of the website to either black, grey or navy.
+ * This code below will give different options to the user to change the background color
+  of the website to either black, grey or navy.
  */
 function change_background_color() {
 	$options = get_option( 'bac_options_settings' );
@@ -168,6 +169,17 @@ function change_background_color() {
       add_action('wp_enqueue_scripts', 'change_background_color');
 
 
+function change_font_color() {
+	$options = get_option( 'bac_options_settings' );
+   	if ($options['bac_select_field'] == 'red'){
+   		echo '<style type="text/css"> .site-main {font:#d92626 !important} </style>';
+   	}elseif ($options['bac_select_field'] == 'white'){
+   		echo '<style type="text/css"> .site-main {font:#ffffff !important} </style>';
+   	}elseif ($options['bac_select_field'] == 'navy'){
+   		echo '<style type="text/css"> .site-main {font: #0033cc !important} </style>';
+   	}
+}
+      add_action('wp_enqueue_scripts', 'change_font_color');
 
 /**
  * Implement the Custom Header feature.
