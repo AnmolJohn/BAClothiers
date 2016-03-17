@@ -35,19 +35,6 @@ function bac_settings_init() {
  */
 	add_settings_field('bac_radio_field', 'Change Background Color', 'bac_radio_field_render', 'BAC_theme_options', 'bac_options_page_section' );
 	
-
-
-/**
- * The code below is for entering daily greeting or promotions on the website.
- */
-	add_settings_field('bac_text_field','Enter Daily Greetings/Promotions', 'bac_text_field_render', 'BAC_theme_options', 'bac_options_page_section');
-
-
-/**
- * This code below, allows user to change the color of the font from thre given colors.
- */	
-	add_settings_field('bac_select_field', 'Choose Font Color','bac_select_field_render','BAC_theme_options','bac_options_page_section' );
-
 /**
  * For changing background color.
  */	
@@ -61,6 +48,10 @@ function bac_settings_init() {
 		<?php
 	}
 
+/**
+ * The code below is for entering daily greeting or promotions on the website.
+ */
+	add_settings_field('bac_text_field','Enter Daily Greetings/Promotions', 'bac_text_field_render', 'BAC_theme_options', 'bac_options_page_section');
 
 /**
  * To enter daily greeting text.
@@ -71,6 +62,13 @@ function bac_settings_init() {
 		<input type="text" name="bac_options_settings[bac_text_field]" value="<?php if (isset($options['bac_text_field'])) echo $options['bac_text_field']; ?>" />
 		<?php
 	}
+
+
+
+/**
+ * This code below, allows user to change the color of the font from thre given colors.
+ */	
+	add_settings_field('bac_select_field', 'Choose Font Color','bac_select_field_render','BAC_theme_options','bac_options_page_section' );
 	
 		
 /**
@@ -108,6 +106,7 @@ function bac_settings_init() {
 	}
 
 }
-
-
+/**
+ * Code below activates the plugin.
+ */	
 add_action( 'admin_init', 'bac_settings_init' );
