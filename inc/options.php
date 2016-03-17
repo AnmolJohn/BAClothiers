@@ -13,9 +13,6 @@ function bac_add_submenu() {
   add_action( 'admin_menu', 'bac_add_submenu' );
 
 	
-/**
- * Creating and registering the settings.
- */
 function bac_settings_init() { 
 	     register_setting( 'BAC_theme_options', 'bac_options_settings' );
 	
@@ -38,11 +35,6 @@ function bac_settings_init() {
  */
 	add_settings_field('bac_radio_field', 'Change Background Color', 'bac_radio_field_render', 'BAC_theme_options', 'bac_options_page_section' );
 	
-/**
- * For changing background color.
- */	
-	
-	add_settings_field('bac_select_field', 'Choose Font Color','bac_select_field_render','BAC_theme_options','bac_options_page_section' );
 
 
 /**
