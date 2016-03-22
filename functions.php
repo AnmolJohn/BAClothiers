@@ -154,7 +154,7 @@ add_action( 'init', 'ba_clothiers_custom_init' );
 
 /**
  * This code below will give different options to the user to change the background color
-  of the website to either black, grey or navy.
+ * of the website to either black, grey or navy.
  */
 function change_background_color() {
 	$options = get_option( 'bac_options_settings' );
@@ -170,7 +170,7 @@ function change_background_color() {
 
 /**
  * This code below will give different options to the user to change the font color
-  of the website to either red, white or navy.
+ * of the website to either red, white or navy.
  */
 function change_font_color() {
 	$options = get_option( 'bac_options_settings' );
