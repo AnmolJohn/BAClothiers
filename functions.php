@@ -48,8 +48,8 @@ function ba_clotheirs_setup() {
 	 *
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
-	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'seasons', 400, 700, true );
+	add_theme_support( 'post-thumbnails' , array( 'seasons', 'content' ) );
+	add_image_size( 700, 525, true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -216,3 +216,4 @@ require get_template_directory() . '/inc/options.php';
 
 // This code here tells the theme where which folder to get the slider from. Currently is is situated in the inc folder
 require get_template_directory() . '/inc/slider.php';
+
